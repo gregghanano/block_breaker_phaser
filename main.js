@@ -1,13 +1,14 @@
-var main = {  
-  preload: function() {
+var main = { 
+  preload: function () {
     // This function will be executed at the beginning     
         // That's where we load the game's assets
+      'use strict'
         game.load.image('paddle', 'assets/paddle.png');
         game.load.image('brick', 'assets/brick.png');
       game.load.image('ball', 'assets/ball.png');
   },
 
-  create: function() { 
+  create: function() {
     // This function is called after the preload function     
         // Here we set up the game, display sprites, etc.
         game.physics.startSystem(Phaser.Physics.ARCADE);
